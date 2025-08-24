@@ -6,6 +6,8 @@
 #include "OnlineSessionSettings.h"
 #include <Online/OnlineSessionNames.h>
 
+
+
 UMultiplayerSessionsSubsystem::UMultiplayerSessionsSubsystem():
 	CreateSessionCompleteDelegate(FOnCreateSessionCompleteDelegate::CreateUObject(this, &ThisClass::OnCreateSessionComplete)),
 	FindSessionsCompleteDelegate(FOnFindSessionsCompleteDelegate::CreateUObject(this, &ThisClass::OnFindSessionsComplete)),
@@ -17,6 +19,7 @@ UMultiplayerSessionsSubsystem::UMultiplayerSessionsSubsystem():
 	if (Subsystem) {
 		SessionInterface = Subsystem->GetSessionInterface();
 	}
+
 }
 
 void UMultiplayerSessionsSubsystem::CreateSession(int32 NumPublicConnections, FString MatchType) {
