@@ -454,3 +454,5 @@ Autosaves/
 Plugins/*/Binaries/
 Plugins/*/Intermediate/
 Plugins/*/Saved/
+
+Content/Assets/*
